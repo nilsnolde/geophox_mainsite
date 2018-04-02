@@ -1,0 +1,263 @@
+{% load static %}
+<section class="portfolio" id="services">
+  <div class="container">
+    <h2 class="text-center text-uppercase text-secondary mb-0">Services</h2>
+    <hr class="star-light mb-5">
+    <div class="row">
+      <div class="col-md-4 mt-5">
+        <a class="portfolio-item d-block mx-auto" href="#mapping" data-toggle="collapse">
+          <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+              <h4>Mapping</h4>
+            </div>
+          </div>
+          <img class="img-fluid" src="{% static 'img/svg_mapping.svg' %}" alt="">
+        </a>
+          <div class="collapse" id="mapping">
+            <div class="card-body">
+                <div class="skill-unit">
+                  <h5>QGIS</h5>
+                  <div class="progress">
+                    <div class="progress-bar bar-geophox bg-success" style="width: 100%;">
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-unit">
+                  <h5>ArcGIS</h5>
+                  <div class="progress">
+                    <div class="progress-bar bar-geophox bg-success" style="width: 100%;">
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-unit">
+                  <h5>Leaflet</h5>
+                  <div class="progress">
+                    <div class="progress-bar bar-geophox bg-success" style="width: 80%;">
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-unit">
+                  <h5>Illustrator</h5>
+                  <div class="progress">
+                    <div class="progress-bar bar-geophox bg-warning" style="width: 70%;">
+                    </div>
+                  </div>
+                </div>
+              <a class="btn btn-primary text-dark">Examples follow soon</a>
+          </div>
+        </div>
+        <p class="lead mt-2">
+          Classical desktop cartography and
+          web mapping solutions, based on clients' needs.
+        </p>
+
+      </div>
+      <div class="col-md-4 mt-5">
+        <a class="portfolio-item d-block mx-auto" href="#develop" data-toggle="collapse">
+          <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+              <h4>Developing</h4>
+            </div>
+          </div>
+          <img class="img-fluid" src="{% static 'img/svg_dev.svg' %}" alt="">
+        </a>
+        <div class="collapse" id="develop">
+          <div class="card-body">
+            <div class="skill-unit">
+              <h5>Full Stack Python</h5>
+              <div class="progress">
+                <div class="progress-bar bar-geophox bg-success" style="width: 100%;">
+                </div>
+              </div>
+            </div>
+            <div class="skill-unit">
+              <h5>HTML/CSS/JavaScript</h5>
+              <div class="progress">
+                <div class="progress-bar bar-geophox bg-success" style="width: 80%;">
+                </div>
+              </div>
+            </div>
+            <div class="skill-unit">
+              <h5>Docker</h5>
+              <div class="progress">
+                <div class="progress-bar bar-geophox bg-warning" style="width: 70%;">
+                </div>
+              </div>
+            </div>
+            <div class="skill-unit">
+              <h5>Latex</h5>
+              <div class="progress">
+                <div class="progress-bar bar-geophox bg-warning" style="width: 70%;">
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-primary text-dark">Examples follow soon</a>
+          </div>
+        </div>
+        <p class="lead mt-2">
+          Development of individual software workflows for all sorts of
+          geo-related topics.
+        </p>
+      </div>
+      <div class="col-md-4 mt-5">
+        <a class="portfolio-item d-block mx-auto" href="#analytics" data-toggle="collapse">
+          <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+              <h4>Analytics</h4>
+            </div>
+          </div>
+          <img class="img-fluid" src="{% static 'img/svg_analytics.svg' %}" alt="">
+        </a>
+        <div class="collapse" id="analytics">
+          <div class="card-body">
+            <div class="skill-unit">
+              <h5>Python</h5>
+              <div class="progress">
+                <div class="progress-bar bar-geophox bg-success" style="width: 100%;">
+                </div>
+              </div>
+            </div>
+            <div class="skill-unit">
+              <h5>PosgreSQL/PostGIS</h5>
+              <div class="progress">
+                <div class="progress-bar bar-geophox bg-success" style="width: 100%;">
+                </div>
+              </div>
+            </div>
+            <div class="skill-unit">
+              <h5>Excel/VBA</h5>
+              <div class="progress">
+                <div class="progress-bar bar-geophox bg-success" style="width: 100%;">
+                </div>
+              </div>
+            </div>
+            <div class="skill-unit">
+              <h5>Geostatistics</h5>
+              <div class="progress">
+                <div class="progress-bar bar-geophox bg-warning " style="width: 70%;">
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-primary text-dark">Examples follow soon</a>
+          </div>
+        </div>
+        <p class="lead mt-2">
+          Enrich your analysis with geospatial information to improve your
+          business decisions!
+        </p>
+      </div>
+    </div>
+
+    <div class="border-grey mt-5"></div>
+
+    <h3 class="text-center mt-5 mb-4">General Workflow</h3>
+
+    <div class="row process-row">
+      <div class="col-2">
+        <div class="process text-center">
+          <p>
+            <img src="{% static 'img/svg_discuss.svg' %}" alt="discuss">
+          </p>
+          <h4>Discuss</h4>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="process">
+          <p>
+            <img src="{% static 'img/svg_design.svg' %}" alt="design">
+          </p>
+          <h4>Design</h4>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="process">
+          <p>
+            <img src="{% static 'img/svg_discuss.svg' %}" alt="design">
+          </p>
+          <h4>Discuss</h4>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="process">
+          <p>
+            <img src="{% static 'img/svg_develop.svg' %}" alt="design">
+          </p>
+          <h4>Develop</h4>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="process">
+          <p>
+            <img src="{% static 'img/svg_test.svg' %}" alt="design">
+          </p>
+          <h4>Test</h4>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="process">
+          <p>
+            <img src="{% static 'img/svg_launch.svg' %}" alt="design">
+          </p>
+          <h4>Launch</h4>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center mt-5">
+          <a href="mailto:contact@geophox.com" class="btn btn-lg btn-secondary" style="display: inline-block">Start Discussion</a>
+    </div>
+
+  </div>
+</section>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-4">
+
+  </div>
+
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

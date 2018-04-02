@@ -2,14 +2,6 @@
 @media screen and (min-width: 992px) {
   /* SERVICES */
 
-  .card > h3 {
-    font-size: 25px;
-  }
-
-  .skill-unit h5 {
-    font-size: 20px;
-  }
-
   .card-body > p {
     font-size: 18px;
   }
@@ -18,12 +10,21 @@
 	.process {
 		width: 108px; height: 108px; padding: 20px 10px;
 		}
+
 	.process img {
   	height: 48px;
     width: 48px;
 		}
-	.process h4 {
-		font-size: 18px;
-    margin-top: 5px;
-		}
+
+  .process h4 {
+    font-size: 20px;
+    font-weight: 600;
+    }
+
+  .team-member img {
+    width: 250px;
+    height: 307px;
+    border: 7px solid #fff;
+    }
+
 }
