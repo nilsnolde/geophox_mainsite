@@ -1,0 +1,184 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  line-height: 1.5em;
+  padding: 20px 0 30px;
+}
+
+h2 {
+  padding: 20px 0 30px;
+}
+
+.section {
+  padding-bottom: 40px;
+}
+
+.hcenter {
+  text-align: center;
+}
+
+.cnt-one {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar {
+  padding: 0px;
+}
+
+nav a.btn {
+  margin: 0px 5px;
+  padding:0px;
+  color:#000;
+}
+.btn-primary {
+  background-color: #818181;
+  color: #FFF;
+  border: 1px solid black;
+}
+
+.btn-example {
+  background-color: #e5e5e5;
+  color: #000;
+  border: 1px solid black;
+}
+
+.btn-example:hover, .btn-primary:hover {
+  background-color: #f39669;
+  color: #FFF;
+}
+
+.btn:active, .btn:focus {
+  -webkit-box-shadow: none;
+  outline: none !important;
+}
+
+.svg-card {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.row.vdivide [class*='col-']:not(:last-child):after {
+  background: #e0e0e0;
+  width: 1px;
+  content: "";
+  display:block;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  min-height: 70px;
+}
+
+.process {
+	position: relative;
+	text-align: center;
+	width: 80px;
+	height: 80px;
+	padding: 16px 10px;
+	margin: 0 auto 1.6em;
+	border-radius: 0 14px 14px 14px;
+  border: 1px solid black;
+	color: #345;
+	background: #fff;
+	}
+
+.process img {
+	height: 32px;
+  width: 32px;
+	}
+
+.process:after {
+	content: "";
+	position:absolute;
+	top: 50%;
+	left: 100%;
+	width: 120%;
+	height: 0;
+	border-bottom: 3px dashed #f39669;
+}
+
+.process-row > div:last-child .process:after {
+	content: "";
+	border-bottom: 0 dashed #000;
+}
+
+.process p {
+  margin: auto auto 0.5em;
+}
+
+.process h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.no-border {
+  border: none;
+}
+
+#svg {
+  text-align: center;
+  opacity: 0.15;
+}
+
+.typewrite, .card-text {
+    color: black;
+}
+
+.card > h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-body > p {
+  font-size: 15px;
+}
+
+.skill-unit {
+  padding-bottom: 1.1em;
+  padding-right: 32px;
+}
+
+.skill-unit h5 {
+  text-align: left;
+  font-family: 'Monda', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.progress {
+  height: 0.5rem;
+}
+
+.bar-geophox {
+  opacity: 0.8;
+  background-color: #575757;
+  height: 0.5rem;
+}
+
+.meta-border {
+  border-bottom: 2px solid #e5e5e5;
+  margin: 30px auto 20px;
+}
+
+.team-member img {
+    width: 250px;
+    height: 307px;
+    border: 7px solid #fff;
+}
+
+.list-item-inline > a {
+  font-size:30px;
+  line-height:40px;
+  display:inline-block;
+  width:40px;
+  height:40px;
+  color:#fff;
+  border-radius:10%;
+  outline:0;
+  background-color:#222
+}

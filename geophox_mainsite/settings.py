@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
+    'favicon', # Workaround from django-favicon package
 ]
 
 MIDDLEWARE = [
