@@ -492,3 +492,7 @@ a:hover {
   right: 0;
   min-height: 70px;
 }
+
+#map {
+  height: 100%;
+}
