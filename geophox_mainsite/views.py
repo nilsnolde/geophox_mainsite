@@ -5,3 +5,6 @@ class HomePage(TemplateView):
 
 class TestPage(TemplateView):
     template_name = 'test.html'
+
+class Impressum(TemplateView):
+    template_name = 'impressum.html'

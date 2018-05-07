@@ -11,6 +11,25 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import json
+from django.core.exceptions import ImproperlyConfigured
+
+"""Import settings"""
+with open(os.environ.get('SITE_CONFIG')) as f:
+ configs = json.loads(f.read())
+ print(configs)
+
+ def get_env_var(setting, configs=configs):
+  try:
+      val = configs[setting]
+      if val == 'True':
+          val = True
+      elif val == 'False':
+          val = False
+      return val
+  except KeyError:
+      error_msg = "ImproperlyConfigured: Set {0} environment variable".format(setting)
+      raise ImproperlyConfigured(error_msg)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,14 +38,10 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'xnl#ydd%m3fzp*dp760lgnqw+&7b3uo$!z714reuqx#h3kx3d3'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
+#get secret key
+SECRET_KEY = get_env_var("SECRET_KEY")
+DEBUG = get_env_var("DEBUG")
+ALLOWED_HOSTS = get_env_var("ALLOWED_HOSTS")
 
 
 # Application definition
@@ -119,7 +134,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
-
+STATIC_ROOT = get_env_var("STATIC_ROOT")
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),

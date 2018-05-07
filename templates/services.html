@@ -1,66 +1,66 @@
 {% load static %}
 <section class="portfolio" id="services">
   <div class="container">
-    <h2 class="text-center text-uppercase text-secondary mb-0">Services</h2>
+    <h2 class="text-center text-uppercase">Services</h2>
     <hr class="star-light mb-5">
-    <div class="row">
-      <div class="col-md-4 mt-5">
-        <a class="portfolio-item d-block mx-auto" href="#mapping" data-toggle="collapse">
-          <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-              <h4>Mapping</h4>
+    <div class="row pb-5">
+      <div class="portfolio col-md-4 mt-5 text-center">
+        <h4 class="mb-3">Mapping</h4>
+        <div class="portfolio-item d-block mx-auto">
+          <img class="" src="{% static 'img/svg_mapping.svg' %}" alt="">
+          <button type="button" class="btn portfolio-btn text-white w-50" href="#mapping" data-toggle="collapse">
+            Skills
+          </button>
+        </div>
+
+        <div class="collapse" id="mapping">
+          <div class="card-body">
+            <div class="skill-unit">
+              <h5>QGIS</h5>
+              <div class="progress">
+                <div class="progress-bar bar-geophox bg-success" style="width: 100%;">
+                </div>
+              </div>
+            </div>
+            <div class="skill-unit">
+              <h5>ArcGIS</h5>
+              <div class="progress">
+                <div class="progress-bar bar-geophox bg-success" style="width: 100%;">
+                </div>
+              </div>
+            </div>
+            <div class="skill-unit">
+              <h5>Leaflet</h5>
+              <div class="progress">
+                <div class="progress-bar bar-geophox bg-success" style="width: 80%;">
+                </div>
+              </div>
+            </div>
+            <div class="skill-unit">
+              <h5>Illustrator</h5>
+              <div class="progress">
+                <div class="progress-bar bar-geophox bg-warning" style="width: 70%;">
+                </div>
+              </div>
             </div>
           </div>
-          <img class="img-fluid" src="{% static 'img/svg_mapping.svg' %}" alt="">
-        </a>
-          <div class="collapse" id="mapping">
-            <div class="card-body">
-                <div class="skill-unit">
-                  <h5>QGIS</h5>
-                  <div class="progress">
-                    <div class="progress-bar bar-geophox bg-success" style="width: 100%;">
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-unit">
-                  <h5>ArcGIS</h5>
-                  <div class="progress">
-                    <div class="progress-bar bar-geophox bg-success" style="width: 100%;">
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-unit">
-                  <h5>Leaflet</h5>
-                  <div class="progress">
-                    <div class="progress-bar bar-geophox bg-success" style="width: 80%;">
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-unit">
-                  <h5>Illustrator</h5>
-                  <div class="progress">
-                    <div class="progress-bar bar-geophox bg-warning" style="width: 70%;">
-                    </div>
-                  </div>
-                </div>
-              <a class="btn btn-primary text-dark">Examples follow soon</a>
-          </div>
         </div>
-        <p class="lead mt-2">
+
+        <p class="lead mt-3">
           Classical desktop cartography and
           web mapping solutions, based on clients' needs.
         </p>
-
+        <a class="btn btn-primary text-dark">Examples follow soon</a>
       </div>
-      <div class="col-md-4 mt-5">
-        <a class="portfolio-item d-block mx-auto" href="#develop" data-toggle="collapse">
-          <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-              <h4>Developing</h4>
-            </div>
-          </div>
-          <img class="img-fluid" src="{% static 'img/svg_dev.svg' %}" alt="">
-        </a>
+
+      <div class="portfolio col-md-4 mt-5 text-center">
+        <h4 class="mb-3">Developing</h4>
+        <div class="portfolio-item d-block mx-auto">
+          <img class="" src="{% static 'img/svg_dev.svg' %}" alt="">
+          <button type="button" class="btn portfolio-btn text-white w-50" href="#develop" data-toggle="collapse">
+            Skills
+          </button>
+        </div>
         <div class="collapse" id="develop">
           <div class="card-body">
             <div class="skill-unit">
@@ -91,23 +91,23 @@
                 </div>
               </div>
             </div>
-            <a class="btn btn-primary text-dark">Examples follow soon</a>
           </div>
         </div>
-        <p class="lead mt-2">
+        <p class="lead mt-3">
           Development of individual software workflows for all sorts of
           geo-related topics.
         </p>
+        <a class="btn btn-primary text-dark">Examples follow soon</a>
       </div>
-      <div class="col-md-4 mt-5">
-        <a class="portfolio-item d-block mx-auto" href="#analytics" data-toggle="collapse">
-          <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-              <h4>Analytics</h4>
-            </div>
-          </div>
-          <img class="img-fluid" src="{% static 'img/svg_analytics.svg' %}" alt="">
-        </a>
+
+      <div class="portfolio col-md-4 mt-5 text-center">
+        <h4 class="mb-3">Analytics</h4>
+        <div class="portfolio-item d-block mx-auto">
+          <img class="" src="{% static 'img/svg_analytics.svg' %}" alt="">
+          <button type="button" class="btn portfolio-btn text-white w-50" href="#analytics" data-toggle="collapse">
+            Skills
+          </button>
+        </div>
         <div class="collapse" id="analytics">
           <div class="card-body">
             <div class="skill-unit">
@@ -138,13 +138,15 @@
                 </div>
               </div>
             </div>
-            <a class="btn btn-primary text-dark">Examples follow soon</a>
+
+  <!-- Custom scripts for this template -->
           </div>
         </div>
-        <p class="lead mt-2">
+        <p class="lead mt-3">
           Enrich your analysis with geospatial information to improve your
           business decisions!
         </p>
+        <a class="btn btn-primary text-dark">Examples follow soon</a>
       </div>
     </div>
 
@@ -208,56 +210,3 @@
 
   </div>
 </section>
-
-<div class="container">
-
-  <div class="row">
-    <div class="col-md-4">
-
-  </div>
-
-  <!-- Portfolio Modal 2 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 3 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
