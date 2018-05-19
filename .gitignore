@@ -1,2 +1,3 @@
 geophox_mainsite/configs/
 *.pyc
+website_env/
