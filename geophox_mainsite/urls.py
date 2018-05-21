@@ -21,7 +21,7 @@ from django.views.generic.base import RedirectView
 urlpatterns = [path('admin/', admin.site.urls),
                path('', views.HomePage.as_view(), name='home'),
                path('slider/', include('main.urls', namespace='slider')),
-               path('', include('favicon.urls')), # Workaround from django-favicon package
+               # path('', include('favicon.urls')), # Workaround from django-favicon package
                path('favicon\.ico', RedirectView.as_view(url='/static/favicon.ico', permanent=True)),
                # path('test/', views.TestPage.as_view(), name='test'),
                path('impressum/', views.Impressum.as_view(), name='impressum')
