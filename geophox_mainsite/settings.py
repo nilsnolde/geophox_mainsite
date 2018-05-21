@@ -138,5 +138,4 @@ STATIC_ROOT = get_env_var("STATIC_ROOT")
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    STATIC_ROOT,
     ]
